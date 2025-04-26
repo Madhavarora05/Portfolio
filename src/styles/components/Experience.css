@@ -1,0 +1,242 @@
+.experience-section {
+    padding: 5rem 0;
+    background-color: #111827;
+    color: #e5e7eb;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-title span{
+    color: #ff5f5f;
+  }
+  
+  .section-description {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .timeline-column {
+    position: relative;
+  }
+  .education-column .timeline-entry {
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .experience-column .timeline-entry {
+    margin-right: 2rem;
+    padding-right: 2rem;
+  }
+  
+  
+  .education-column {
+    padding-right: 2rem;
+  }
+  
+  .experience-column {
+    padding-left: 2rem;
+  }
+  
+  .column-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #f3f4f6;
+    position: relative;
+  }
+  
+  .column-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #6741d9;
+  }
+  
+  /* Timeline vertical line - Enhanced */
+  .education-column::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    left: 6px;
+    width: 2px;
+    background: linear-gradient(to bottom, #8b5cf6 0%, #6741d9 100%);
+    z-index: 0;
+  }
+  
+  .experience-column::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    right: 6px;
+    width: 2px;
+    background: linear-gradient(to bottom, #8b5cf6 0%, #6741d9 100%);
+    z-index: 0;
+  }
+  
+  .timeline-entry {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+  }
+  
+  .timeline-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Timeline dots - refined position */
+  .timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #8b5cf6;
+    border: 3px solid #111827;
+    z-index: 2;
+  }
+  
+  .education-column .timeline-dot {
+    left: -15px;
+    top: 1.75rem;
+  }
+  
+  .experience-column .timeline-dot {
+    right: -15px;
+    top: 1.75rem;
+  }
+  
+  .timeline-date {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(139, 92, 246, 0.15);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    color: #a78bfa;
+    margin-bottom: 0.75rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #f9fafb;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .timeline-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+    font-weight: normal;
+  }
+  
+  .timeline-grade {
+    font-size: 0.9rem;
+    color: #6741d9;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .timeline-description {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .timeline-icon {
+    color: #8b5cf6;
+    font-size: 1.25rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .timeline-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .education-column,
+    .experience-column {
+      padding: 0;
+    }
+  
+    .education-column::after {
+      left: 6px;
+      right: auto;
+    }
+  
+    .experience-column::before {
+      right: 6px;
+      left: auto;
+    }
+  
+    .education-column .timeline-dot {
+      left: -15px;
+      right: auto;
+    }
+  
+    .experience-column .timeline-dot {
+      right: -15px;
+      left: auto;
+    }
+  
+    .timeline-entry {
+      margin-left: 1.5rem;
+    }
+  
+    .experience-column .timeline-entry {
+      margin-left: 0;
+      margin-right: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .column-title {
+      font-size: 1.5rem;
+    }
+  
+    .timeline-title {
+      font-size: 1.1rem;
+    }
+  
+    .timeline-entry {
+      padding: 1rem;
+    }
+  }
+  

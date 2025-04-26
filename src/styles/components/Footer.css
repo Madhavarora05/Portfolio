@@ -1,0 +1,137 @@
+.footer {
+  padding: 60px 0 30px;
+  background-color: #111827; /* deep dark navy */
+  color: #e5e7eb; /* light grey text */
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Name Section */
+.footer-name {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer-name h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #7c5cf0; /* soft violet for brand highlight */
+  margin-bottom: 15px;
+}
+
+.footer-divider {
+  max-width: 300px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #374151; /* darker line */
+}
+
+/* Navigation Links */
+.footer-nav {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-nav ul li a {
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.leetcode-img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  margin: 0 8px;
+}
+
+.leetcode-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+
+.footer-nav ul li a:hover {
+  color: #7c5cf0;
+}
+
+/* Social Media Icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #e5e7eb;
+  background-color: #1f2937; /* subtle background circle */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #7c5cf0;
+  transform: translateY(-3px);
+}
+
+.social-links i {
+  font-size: 20px;
+}
+
+/* Portfolio Views */
+.portfolio-views {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #7c5cf0;
+}
+
+.view-icon {
+  font-size: 18px;
+}
+
+.view-count {
+  font-size: 16px;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 20px;
+  color: #6b7280; /* muted grey */
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-nav ul {
+    gap: 15px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}

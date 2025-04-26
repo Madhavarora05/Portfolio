@@ -1,0 +1,174 @@
+/* Container for sidebar toggle */
+.sidebar-toggle-container {
+    position: relative;
+  }
+  
+  /* Toggle Button */
+  .sidebar-toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 300;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-toggle-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Dots inside toggle button */
+  .dots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dot {
+    width: 7px;
+    height: 7px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .sidebar-toggle-button:hover .dot {
+    transform: scale(1.2);
+  }
+  
+  /* Sidebar main styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -35%;
+    width: 30%;
+    height: 100vh;
+    background: rgba(26, 29, 41, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.4);
+    transition: right 0.4s ease, opacity 0.4s ease;
+    z-index: 200;
+    overflow-y: auto;
+    color: #e5e7eb;
+    /* Changed padding to have 0 at bottom */
+    padding: 70px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sidebar visible state */
+  .sidebar.visible {
+    right: 0;
+    opacity: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 75%;
+      right: -75%;
+    }
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #e5e7eb;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 210;
+    transition: transform 0.3s;
+  }
+  
+  .close-button:hover {
+    transform: rotate(90deg);
+  }
+  
+  /* Overlay background */
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 24, 39, 0.7);
+    z-index: 190;
+  }
+  
+  /* Sidebar Content */
+  .sidebar-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Sidebar Inner Content */
+  .sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  
+  /* Footer with GitHub Button */
+  .sidebar-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: auto;
+  }
+  
+  .github-button {
+    padding: 12px 28px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .github-button:hover {
+    background-color: #e15757;
+  }
+  
+  /* Navigation Links */
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .nav ul li a {
+    color: #e5e7eb;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #ff6b6b;
+  }

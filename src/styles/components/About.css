@@ -1,0 +1,69 @@
+.about {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .section-title span{
+    color: #ff5f5f;
+  }
+
+  .about-tagline {
+    margin-bottom: 30px;
+  }
+  
+  .about-tagline h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .about-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .personal-info {
+    margin-top: 40px;
+  }
+  
+  .info-item {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .info-label {
+    font-weight: 600;
+    color: #333;
+    min-width: 120px;
+  }
+  
+  .info-colon {
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .info-value {
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .info-item {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .info-colon {
+      display: none;
+    }
+    
+    .info-value {
+      margin-top: 5px;
+    }
+  }
