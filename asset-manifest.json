@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.5c8ce360.css",
+    "main.js": "/Portfolio/static/js/main.107cc8c9.js",
+    "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/Sustain.png": "/Portfolio/static/media/Sustain.4d2f9adaf868108778f4.png",
+    "static/media/beetch.png": "/Portfolio/static/media/beetch.beca1fc3b0e92255782a.png",
+    "static/media/profile.jpg": "/Portfolio/static/media/profile.6f356a1729646855bc53.jpg",
+    "static/media/TruImg.png": "/Portfolio/static/media/TruImg.dd4795ba3949d39fd8b8.png",
+    "static/media/Suduko.png": "/Portfolio/static/media/Suduko.424c7001d68b4ced7922.png",
+    "static/media/Weather.png": "/Portfolio/static/media/Weather.67ed2d08078dac0c3316.png",
+    "static/media/Easy.png": "/Portfolio/static/media/Easy.508c857dffefcb3d9841.png",
+    "static/media/Quest.png": "/Portfolio/static/media/Quest.1ef390d70d8b7159c455.png",
+    "static/media/sjf.jpeg": "/Portfolio/static/media/sjf.24e9cb9075697e1fd901.jpeg",
+    "index.html": "/Portfolio/index.html",
+    "main.5c8ce360.css.map": "/Portfolio/static/css/main.5c8ce360.css.map",
+    "main.107cc8c9.js.map": "/Portfolio/static/js/main.107cc8c9.js.map",
+    "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c8ce360.css",
+    "static/js/main.107cc8c9.js"
+  ]
+}
