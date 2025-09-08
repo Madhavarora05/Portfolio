@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../styles/components/Hero.css';
-import profileImage from "../assets/images/profile.jpg"; // Update with your image path
+import profileImage from "../assets/images/profile1.jpg"; // Update with your image path
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
